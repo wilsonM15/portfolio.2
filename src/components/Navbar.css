@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=New+Amsterdam&family=Teko:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: #181818;
+    /*background: linear-gradient(rgb(13, 13, 63), #011222, rgb(12, 12, 53), #011222 100%);*/
+    height: 100dvh;
+    max-width: 100%;
+    position: relative;
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  
+  body::before{
+    position: absolute;
+    content: "";
+    z-index: -1;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  
+  header{
+    background-color: #181818;
+    /*background-color: whitesmoke;*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+    overflow: hidden;
+  }
+  
+  .container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .container nav .logo{
+    color: whitesmoke;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'teko', monospace;
+
+  }
+  
+  .container .nav-link{
+    display: flex;
+  }
+
+  
+  .container .nav-link li{
+    list-style: none;
+    margin: 0 0.5rem;
+  }
+  
+  .container ul li a{
+    font-family: 'teko';
+    font-weight: 100;
+    color: rgb(253, 252, 252);
+    font-size: 1.4rem;
+    padding: 0.7rem 1rem;
+    display: block;
+    border-radius: 10px;
+    border-radius: 4px;
+
+  
+  }
+  
+  .container ul li a:hover,
+  .container ul li a.active{
+    background-color: #0188ff;
+  }
+  
+  
+  
+  
+  /*-------------------main title-------------*/
+  
+  .content{
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, 0%);
+    width: 79%;
+  }
+  
+  .content h2{
+     position: relative;
+     font-size: 40px;
+     color: #FCFCF7;
+     text-align: left;
+     font-family: 'archivo black';
+     letter-spacing: 1px;
+     padding: 2rem 1rem 1rem 10rem;
+     
+    
+    
+     
+  }
+
+  .content h2 span{
+     color: whitesmoke;
+     font-weight: bold;
+     font-size: 40px;
+ 
+  }
+
+  .content p{
+    position:relative;
+    font-size: 1.5rem;
+    color: #FCFCF7;
+    text-align: left;
+    margin-top: 2rem;
+    padding: 1rem 1rem 1rem 10rem;
+  }
+
+  button{
+    width: 15rem;
+    
+  }
+
+  .contact-button{
+    position: relative;
+    margin-top: 1rem;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 7rem;
+    padding: 1rem 1rem 1rem 3rem;
+
+  }
+
+  .contact{
+    position: relative;
+    background-color: #0470d5;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .image-AI{
+    display: flex;
+    position: relative;
+    top: 9rem;
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: -2;
+    height: auto;
+    margin-right: -2rem;
+  }
+
+  .image-AI img{
+    width: 40rem ;
+    height: auto;
+    transform: translateX(150%);
+    filter: blur(1px);
+   
+  }
+
+  
+  /*-------------------ICON--------------*/
+  
+  .icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    color: aliceblue;
+    
+  
+  }
+  
+  @media(max-width:768px){
+  
+    .icon{
+      display: block;
+      padding: .8rem;
+
+    }
+  
+    .container .nav-link{
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: rgb(26, 24, 24);
+      position: absolute;
+      width: 300px;
+      height: 100dvh;
+      top: -1000px;
+      right: 0;
+      z-index: 10;
+      margin-top: -1rem;
+
+    }
+
+    .container ul li a{
+      border-radius: 0;
+      border: none;
+      color: whitesmoke;
+      font-weight: bold;
+      font-size: 1.2rem;
+      padding: 1rem 1rem;
+      display: block;
+      text-align: left;
+      font-family: 'teko';
+      margin-bottom: -6rem;
+      margin-top: -6rem;
+      
+    }
+  
+    .nav-link.active{
+      top: 10%;
+  
+    }
+  }
+
+
+  @media (max-width:425px){
+    .container .nav-link{
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: rgb(26, 24, 24);
+      position: absolute;
+      margin-top: 1rem;
+      width: 200px;
+      height: 100vh;
+      
+    }
+  }
+
+  @media (max-width:320px){
+    .container .nav-link{
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: rgb(26, 24, 24);
+      position: absolute;
+      width: 150px;
+      height: 100vh;
+      
+    }
+
+    .container ul li a{
+      font-size: 1rem;
+    }
+  }
