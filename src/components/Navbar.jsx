@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import './Navbar.css';
 
@@ -38,7 +38,7 @@ function Navbar() {
 </>
   );
 }
-{/*
+/*
 function CustomLink ({ href, children, ...props}) {
     const path = window.location.pathname
 
@@ -50,5 +50,5 @@ function CustomLink ({ href, children, ...props}) {
         </li>
     )
 }
-*/}
+*/
 export default Navbar
